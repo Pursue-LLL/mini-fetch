@@ -1,0 +1,26 @@
+{
+  "name": "minifetch",
+  "version": "1.0.0",
+  "description": "超级轻量版fetch请求库，支持跨域，用于需要兼容低版本浏览器的库或项目使用",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "liuyulu01@xdfzx.com",
+  "license": "ISC",
+  "homepage": "http://npm.koolearn.com/-/web/detail/@xdf/fetch-remote-config",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "rollup": "^3.25.0"
+  }
+}
