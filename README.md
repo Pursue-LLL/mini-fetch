@@ -1,34 +1,26 @@
-# MiniFetch
+# miniyfetch
 
-MiniFetch 是一个轻量级的 JavaScript HTTP 请求库，用于发送异步 HTTP 请求。
+miniyfetch 是一个轻量级的 JavaScript HTTP 请求库，用于发送异步 HTTP 请求。
 
 ## 安装
 
-你可以通过以下方式安装 MiniFetch：
+你可以通过以下方式安装 miniyfetch：
 
 ### 使用 npm 或 Yarn 安装
 
 ```bash
-npm install minifetch
+npm install miniyfetch
 ```
 
 或
 
 ```bash
-yarn add minifetch
-```
-
-### 直接下载
-
-你可以直接下载 `minifetch.js` 文件，并在你的项目中引入它。
-
-```html
-<script src="minifetch.js"></script>
+yarn add miniyfetch
 ```
 
 ## 使用
 
-使用 MiniFetch 非常简单。你可以调用 `fetch` 函数来发送 HTTP 请求。
+使用 miniyfetch 非常简单。你可以调用 `fetch` 函数来发送 HTTP 请求。
 
 ```javascript
 fetch(url, options, responseType)
@@ -44,9 +36,7 @@ fetch(url, options, responseType)
 
 - `url`：请求的 URL 地址。
 - `options`：一个包含请求选项的对象，包括方法、头部和请求体等。
-- `responseType`：响应的数据类型，可以是 `'json'`
-ASSISTANT -> ALL
-、`'text'`、`'blob'` 等，默认为 `'json'`。
+- `responseType`：响应的数据类型，可以是 `'json'`、`'text'`、`'blob'`，默认为 `'json'`。
 
 #### `options` 对象的属性
 

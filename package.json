@@ -1,26 +1,39 @@
 {
-  "name": "minifetch",
-  "version": "1.0.0",
+  "name": "miniyfetch",
+  "version": "1.0.2",
   "description": "超级轻量版fetch请求库，支持跨域，用于需要兼容低版本浏览器的库或项目使用",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     "import": "./dist/index.js",
+    "types": "./dist/types/index.d.ts",
     "require": "./dist/index.cjs"
   },
   "scripts": {
     "build": "rollup -c"
   },
-  "author": "liuyulu01@xdfzx.com",
+  "type": "module",
+  "author": "CorderLiu",
   "license": "ISC",
-  "homepage": "http://npm.koolearn.com/-/web/detail/@xdf/fetch-remote-config",
+  "homepage": "https://www.npmjs.com/package/miniyfetch",
   "files": [
     "dist",
     "src",
     "README.md"
   ],
-  "type": "module",
+  "keywords": [
+    "fetch",
+    "axios",
+    "XHR",
+    "minifetch"
+  ],
   "devDependencies": {
-    "rollup": "^3.25.0"
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup": "^3.25.1",
+    "rollup-plugin-copy": "^3.4.0"
   }
 }
