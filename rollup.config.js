@@ -12,15 +12,15 @@ export default {
     {
       file: 'dist/index.js',
       format: 'esm',
+      // sourcemap: true,
     },
   ],
   plugins: [
     babel({
       babelHelpers: 'bundled',
-      presets: ['@babel/preset-env']
+      presets: ['@babel/preset-env'],
     }),
     terser(),
-    // 拷贝类型文件
     copy({
       targets: [
         { src: 'src/index.d.ts', dest: 'dist/types' },

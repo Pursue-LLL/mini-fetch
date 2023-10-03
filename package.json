@@ -1,39 +1,42 @@
 {
   "name": "miniyfetch",
-  "version": "1.0.2",
   "description": "超级轻量版fetch请求库，支持跨域，用于需要兼容低版本浏览器的库或项目使用",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    "import": "./dist/index.js",
-    "types": "./dist/types/index.d.ts",
-    "require": "./dist/index.cjs"
-  },
-  "scripts": {
-    "build": "rollup -c"
-  },
-  "type": "module",
+  "version": "1.1.0",
   "author": "CorderLiu",
   "license": "ISC",
+  "type": "module",
   "homepage": "https://www.npmjs.com/package/miniyfetch",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist",
     "src",
     "README.md"
   ],
+  "scripts": {
+    "build": "rollup -c"
+  },
   "keywords": [
     "fetch",
     "axios",
     "XHR",
     "minifetch"
   ],
+  "types": "./dist/types/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
+    "rollup": "^3.25.1",
+    "rollup-plugin-copy": "^3.4.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-terser": "^0.4.3",
-    "rollup": "^3.25.1",
-    "rollup-plugin-copy": "^3.4.0"
+    "@babel/preset-env": "^7.22.5",
+    "@babel/core": "^7.22.5"
   }
 }
